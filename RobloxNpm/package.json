@@ -1,0 +1,9 @@
+{
+  "name": "roblox-npm",
+  "version": "0.0.0",
+  "description": "RobloxNpm",
+  "main": "app.js",
+  "author": {
+    "name": "Bob"
+  }
+}
