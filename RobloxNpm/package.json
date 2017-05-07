@@ -1,9 +1,19 @@
 {
-  "name": "roblox-npm",
-  "version": "0.0.0",
-  "description": "RobloxNpm",
-  "main": "app.js",
+  "name": "roblox",
+  "version": "0.0.1",
+  "description": "The unofficial Roblox npm for node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Roblox",
+    "WebGL3D"
+  ],
   "author": {
-    "name": "Bob"
+    "name": "WebGL3D"
+  },
+  "dependencies": {
+    "tixfactory.http": "^1.0.1"
   }
 }

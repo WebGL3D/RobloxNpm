@@ -11,7 +11,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>79a37bde-f581-4e09-bff6-df61f8d7267d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>app.js</StartupFile>
+    <StartupFile>index.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -28,7 +28,25 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="app.js" />
+    <Compile Include="auth.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="http.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="index.js" />
+    <Compile Include="inventory.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jquery.promise.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="users.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
