@@ -16,5 +16,6 @@
 	"dependencies": {
 		"tixfactory.http": ">=1.0.3",
 		"tixfactory.util": ">=0.0.1"
-	}
+	},
+	"repository": "WebGL3D/RobloxNpm"
 }
