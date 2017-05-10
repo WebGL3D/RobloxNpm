@@ -31,6 +31,9 @@
     <Compile Include="auth.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="catalog.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="example.js">
       <SubType>Code</SubType>
     </Compile>
@@ -39,9 +42,6 @@
     </Compile>
     <Compile Include="index.js" />
     <Compile Include="inventory.js">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="jquery.promise.js">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="users.js">
