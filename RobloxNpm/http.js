@@ -1,7 +1,7 @@
 ﻿/* RobloxNpm/http.js [05/06/2017] */
 // HTTP request wrapper designed for Roblox requests
 module.exports = function (auth) {
-	var http = require("tixfactory.http");
+	var http = new require("tixfactory.http")();
 	var xsrfToken = "";
 	var tokenRequestMethods = ["POST", "PATCH", "DELETE"];
 	var Roblox = {};
