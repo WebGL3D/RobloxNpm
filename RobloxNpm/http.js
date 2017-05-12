@@ -1,7 +1,8 @@
 ﻿/* RobloxNpm/http.js [05/06/2017] */
 // HTTP request wrapper designed for Roblox requests
 module.exports = function (auth) {
-	var http = new require("tixfactory.http")();
+	var http = require("tixfactory.http");
+	var httpClient = new http();
 	var xsrfToken = "";
 	var tokenRequestMethods = ["POST", "PATCH", "DELETE"];
 	var Roblox = {};
@@ -13,7 +14,7 @@ module.exports = function (auth) {
 		apiSiteDomains.push(`${subdomain}.roblox.com`);
 	});
 
-	http.socketConfiguration({
+	httpClient.socketConfiguration({
 		getWritesPerSecond: function (host, port) {
 			if (host === "search.roblox.com") {
 				return 1;
@@ -55,7 +56,7 @@ module.exports = function (auth) {
 					});
 				}
 
-				http.request({
+				httpClient.request({
 					url: requestData.url,
 					method: requestData.method,
 					queryParameters: requestData.queryParameters,
