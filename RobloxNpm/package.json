@@ -1,6 +1,6 @@
 {
   "name": "roblox",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "The unofficial Roblox npm for node.",
   "main": "index.js",
   "scripts": {
