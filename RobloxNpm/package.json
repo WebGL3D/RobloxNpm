@@ -14,7 +14,7 @@
     "name": "WebGL3D"
   },
   "dependencies": {
-    "tixfactory.http": "^1.0.6",
+    "tixfactory.http": "^1.0.7",
     "tixfactory.util": ">=0.0.1"
   },
   "repository": "WebGL3D/RobloxNpm"

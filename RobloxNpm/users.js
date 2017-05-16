@@ -1,5 +1,5 @@
 ﻿/* RobloxNpm/users.js [05/06/2017] */
-module.exports = function ($, http) {
+module.exports = function ($, httpClient) {
 	return {
 		getByUserId: $.promise.cache(function (resolve, reject, userId) {
 			if (typeof (userId) !== "number" || userId <= 0) {
@@ -10,7 +10,16 @@ module.exports = function ($, http) {
 				return;
 			}
 
-			http.get("https://www.roblox.com/profile", { userId: userId }).then(function (r) {
+			httpClient.get("https://www.roblox.com/profile", { userId: userId }).then(function (response) {
+				if (response.statusCode !== 200) {
+					reject([{
+						code: 0,
+						message: "HTTP request failed"
+					}]);
+					return;
+				}
+
+				var r = response.responseJson;
 				resolve({
 					id: r.UserId,
 					username: r.Username,

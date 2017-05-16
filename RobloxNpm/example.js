@@ -14,3 +14,9 @@ Roblox.users.getByUserId(48103520).then(function (user) {
 }).catch(function (e) {
 	console.error(e);
 });
+
+Roblox.inventory.userHasAsset(48103520, 1272714).then(function (hasAsset) {
+	console.log("ye?", hasAsset);
+}).catch(function (e) {
+	console.error(e);
+});

@@ -28,16 +28,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="auth.js">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="catalog.js">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="example.js">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="http.js">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="index.js" />
